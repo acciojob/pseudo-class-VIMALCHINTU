@@ -6,14 +6,14 @@
 
 /* Before content */
 #container::before {
-  content: "Before Content ";
+  content: "Before Element";
   color: #f00;
   font-size: 20px;
 }
 
 /* After content */
 #container::after {
-  content: " After Content";
+  content: " After Element";
   color: #f00;
   font-size: 20px;
 }
