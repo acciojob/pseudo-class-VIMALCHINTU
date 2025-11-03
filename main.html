@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements Example</title>
+  <link rel="stylesheet" href="styles.css">
+	<style>
+		/* Main container */
+#container {
+  margin: 20px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+}
+
+/* Before pseudo-element */
+#container::before {
+  content: "Before Content - ";
+  color: #f00;
+  font-size: 20px;
+}
+
+/* After pseudo-element */
+#container::after {
+  content: " - After Content";
+  color: #f00;
+  font-size: 20px;
+}none
+	</style>
 </head>
-
 <body>
-	<div id="container">
-		This is the main container text
-		
-	</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div id="container">
+    This is the main container content.
+  </div>
 </body>
-
 </html>
