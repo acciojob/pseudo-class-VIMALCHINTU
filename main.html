@@ -6,32 +6,30 @@
   <title>Pseudo Elements Example</title>
   <link rel="stylesheet" href="styles.css">
 	<style>
-		/* Main container */
-#container {
+		#container {
   margin: 20px;
   font-size: 18px;
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc;
 }
 
-/* Before pseudo-element */
 #container::before {
   content: "Before Content - ";
   color: #f00;
   font-size: 20px;
 }
 
-/* After pseudo-element */
 #container::after {
   content: " - After Content";
   color: #f00;
   font-size: 20px;
-}none
+}
+
 	</style>
 </head>
 <body>
   <div id="container">
-    This is the main container content.
+    This is the main container element
   </div>
 </body>
 </html>
